@@ -35,6 +35,16 @@ function RUTDIGIT(number) {
   return digit;
 }
 
+//Spanish alias of RUTDIGIT
+function DIGITORUT(number) {
+  return RUTDIGIT(number);
+}
+
 function VERIFYRUT(rut, digit) {
   return RUTDIGIT(rut) === digit.toString();
+}
+
+//Spanish alias of VERIFYRUT
+function VERIFICARUT(rut, digit) {
+  return VERIFYRUT(rut, digit);
 }
